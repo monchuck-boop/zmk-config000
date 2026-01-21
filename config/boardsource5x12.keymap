@@ -23,11 +23,11 @@
             // |ADJUST | LCTL | LALT | LGUI | LOWR | SPACE| SPACE |  RAIS | LEFT | DOWN | UARW  | RARW  |
 
             bindings = <
-                &kp LC(Z)     &kp SEMI  &kp LBKT  &kp LPAR  &kp LT    &kp LBRC
-                &kp LANG1     &kp P     &kp K     &kp R     &kp A     &kp F
-                &kp BSPC      &kp D     &kp T     &kp H     &kp E     &kp O
-                &sk LSHFT     &kp Y     &kp S     &kp N     &kp I     &kp U     &kp SPACE
-                &sk LCTRL     &sk LALT  &sk LGUI  &mo SYM   &mo NUM   &opt_tap OPT SPACE &kp ENTER
+                &kp LC(Z)     &kp SEMI  &kp LBKT  &kp LPAR  &kp LT    &kp LBRC　　　　　　 &trans　　&trans　 &trans 　&trans 　&trans 　&trans 　&trans
+                &kp LANG1     &kp P     &kp K     &kp R     &kp A     &kp F　　 　　　　　　&trans　　&trans　 &trans 　&trans 　&trans 　&trans 　&trans
+                &kp BSPC      &kp D     &kp T     &kp H     &kp E     &kp O　　 　　　　　　&trans　　&trans　 &trans 　&trans 　&trans 　&trans 　&trans
+                &sk LSHFT     &kp Y     &kp S     &kp N     &kp I     &kp U    &kp SPACE　　　　　　　&trans　 &trans 　&trans 　&trans 　&trans 　&trans
+                &sk LCTRL     &sk LALT  &sk LGUI  &mo SYM   &mo NUM   &opt_tap OPT SPACE &kp ENTER　&trans　 &trans 　&trans 　&trans 　&trans 　&trans
             >;
         };
 
