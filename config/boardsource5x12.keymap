@@ -72,11 +72,12 @@
 
         num_layer {
             bindings = <
-                &trans       &trans    &sl FUNC   &kp HOME  &kp END   &trans &trans &trans &trans &trans &trans &trans
+                &trans       &trans    &sl 2      &kp HOME  &kp END   &trans &trans &trans &trans &trans &trans &trans
                 &trans       &kp ASTRK &kp KP_N7  &kp KP_N8 &kp KP_N9 &kp MINUS &trans &trans &trans &trans &trans &trans
                 &kp KP_DOT   &kp KP_SLASH &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp PLUS &trans &trans &trans &trans &trans &trans
                 &kp NUM_LOCK &kp KP_N0 &kp KP_N1  &kp KP_N2 &kp KP_N3 &kp LC(LS(F1)) &trans &trans &trans &trans &trans &trans
                 &trans       &trans    &kp KP_DOT &kp COMMA &trans    &trans &trans &trans &trans &trans &trans &trans
+
             >;
         };
     };
