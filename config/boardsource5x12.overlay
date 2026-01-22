@@ -1,0 +1,31 @@
+// config/boardsource5x12.overlay の例
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+    };
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        label = "KSCAN";
+        diode-direction = "col2row";
+
+        // 5x7 に合わせてピンを指定（以下は例です。ご自身の配線に合わせて修正してください）
+        row-gpios
+            = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+
+        col-gpios
+            = <&pro_micro 14 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 15 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 18 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 19 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 20 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 21 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 10 GPIO_ACTIVE_HIGH>
+            ;
+    };
+};
