@@ -40,11 +40,11 @@
             // |       |  F7  |  F8  |  F9  |  F10 |  F11 |   F12 | LS(#) |LS(|) |      |       |       |
             // |       |      |      |      |      |      |       |       | NEXT | Vol- | Vol+ | PLAY   |
             bindings = <
-                &kp ESC   &kp F2   &kp F3   &kp F4   &kp F5    &kp F6       &kp F7          &kp F8              &kp F9              &kp F10      &kp F11          &kp F12
-                &kp TILDE &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT    &kp CARET       &kp AMPS            &kp ASTRK           &kp LPAR     &kp RPAR         &kp DEL
-                &trans    &kp F1   &kp F2   &kp F3   &kp F4    &kp F5       &kp F6          &kp UNDER           &kp PLUS            &kp LBRC     &kp RBRC         &kp PIPE
-                &trans    &kp F7   &kp F8   &kp F9   &kp F10   &kp F11      &kp F12         &kp LS(NON_US_HASH) &kp LS(NON_US_BSLH) &trans       &trans           &trans
-                &trans   &trans   &trans   &trans    &trans    &trans       &trans          &mo 3               &kp C_NEXT          &kp C_VOL_DN &kp C_VOL_UP     &kp C_PLAY_PAUSE
+                &kp ESC       &kp COLON &kp RBKT  &kp RPAR  &kp GT    &kp RBRC
+                &kp LANG2     &kp J     &kp M     &kp B     &kp SQT   &kp TAB
+                &kp DOT       &kp V     &kp C     &kp L     &kp Z     &kp Q
+                &trans        &kp X     &kp G     &kp W     &kp MINUS &kp DEL   &kp ESC
+                &trans        &trans    &trans    &kp COMMA &desktop  &trans    &trans
             >;
         };
 
@@ -56,11 +56,11 @@
             // |       |  F7  |  F8  |  F9  |  F10 |  F11 |  F12  |   #   |  |   |      |       |       |
             // |       |      |      |      |      |      |       |       |       |      |      |       |
             bindings = <
-                &kp ESC   &kp F2   &kp F3   &kp F4   &kp F5    &kp F6  &kp F7    &kp F8          &kp F9          &kp F10      &kp F11          &kp F12
-                &kp TILDE &kp N1   &kp N2   &kp N3   &kp N4    &kp N5  &kp N6    &kp N7          &kp N8          &kp N9       &kp N0           &kp DEL
-                &kp DEL   &kp F1   &kp F2   &kp F3   &kp F4    &kp F5  &kp F6    &kp MINUS       &kp EQUAL       &kp LBKT     &kp RBKT         &kp BSLH
-                &trans    &kp F7   &kp F8   &kp F9   &kp F10   &kp F11 &kp F12   &kp NON_US_HASH &kp NON_US_BSLH &trans       &trans           &trans
-                          &trans   &trans   &trans   &trans    &mo 3   &trans &trans &trans    &trans          &trans          &trans       &trans
+                &none         &none     &trans    &sys_reset &none    &none
+                &none         &none     &kp F7    &kp F8    &kp F9    &trans
+                &none         &none     &kp F4    &kp F5    &kp F6    &kp F12
+                &none         &kp F10   &kp F1    &kp F2    &kp F3    &kp F11   &trans
+                &none         &trans    &trans    &trans    &trans    &trans    &trans
             >;
         };
 
@@ -72,11 +72,11 @@
             // |      |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |LCTRL(DEL) |
             // |      |      |      |      |      |BOOTLD|BOOTLD|      |      |      |      |           |
             bindings = <
-                &tog 4 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-                &trans &none  &none  &none  &none  &none  &none  &none  &none  &none   &none   &kp LA(PSCRN)
-                &trans &none  &none  &none  &none  &none  &none  &none  &none  &none   &none   &kp PSCRN
-                &trans &none  &none  &none  &none  &none  &none  &none  &none  &none   &none   &kp LC(DEL)
-                &trans &trans &trans &trans &trans &bootloader   &bootloader &trans &trans &trans &trans  &trans
+                &kp INS       &kp GRAVE &trans    &kp PG_UP &kp PG_DN &kp CARET
+                &trans        &kp BSLH  &kp HASH  &kp EQUAL &kp QMARK &kp PRCNT
+                &trans        &kp DLLR  &kp UP    &kp AT    &kp EXCL  &kp PIPE
+                &kp CAPS      &kp LEFT  &kp DOWN  &kp RIGHT &kp UNDER &kp AMPS  &trans
+                &trans        &trans    &kp PSCRN &trans    &kp TILDE &trans    &trans
             >;
         };
 
@@ -88,11 +88,11 @@
             // |       |        |        |        |        |        |      |      |      |     |     |      |
             // |       |        |        |        |        |        |      |      |      |     |     |      |
             bindings = <
-                &tog 4       &kp F2       &kp F3       &kp F4       &kp F5       &kp F6       &kp F7     &kp F8     &kp F9     &kp F10 &kp F11 &trans
-                &out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_PRV &bt BT_NXT &bt BT_CLR &trans  &trans  &trans
-                &trans       &trans       &trans       &trans       &trans       &trans       &trans     &trans     &trans     &trans  &trans  &trans
-                &trans       &trans       &trans       &trans       &trans       &trans       &trans     &trans     &trans     &trans  &trans  &trans
-                &trans       &trans       &trans       &trans       &trans       &trans       &trans     &trans     &trans     &trans  &trans  &trans
+                &trans        &trans    &sl FUNC  &kp HOME  &kp END   &trans
+                &trans        &kp ASTRK &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp MINUS
+                &kp KP_DOT    &kp KP_SLASH &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp PLUS
+                &kp NUM_LOCK  &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp LC(LS(F1)) &trans
+                &trans        &trans    &kp KP_DOT &kp COMMA &trans   &trans    &trans
             >;
         };
     };
