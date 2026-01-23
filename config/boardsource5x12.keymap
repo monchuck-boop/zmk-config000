@@ -24,6 +24,8 @@
 &kp BSPC   &kp D      &kp T     &kp H     &kp E   &kp O     &sk LSHFT  &kp Y      &kp S  &kp N  &kp I  &kp U
 &kp SPACE  &sk LCTRL  &sk LALT  &sk LGUI  &to 3   &to 2     &to 1      &kp ENTER
             >;
+
+            label = "0";
         };
 
         lower_layer {
@@ -39,6 +41,8 @@
 &kp DOT  &kp V      &kp C     &kp L     &kp Z      &kp Q                              &trans     &kp X   &kp G  &kp W  &kp MINUS  &kp DEL
 &kp ESC  &trans     &trans    &trans    &kp COMMA  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &trans     &trans
             >;
+
+            label = "1";
         };
 
         raise_layer {
@@ -54,6 +58,8 @@
 &none   &none  &kp F4  &kp F5      &kp F6  &kp F12  &none   &kp F10  &kp F1  &kp F2  &kp F3  &kp F11
 &trans  &none  &trans  &trans      &trans  &trans   &trans  &trans
             >;
+
+            label = "2";
         };
 
         adjust_layer {
@@ -84,6 +90,8 @@
 &kp KP_DOT  &kp KP_SLASH  &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp PLUS  &kp KP_NUMLOCK  &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LC(LS(F1))
 &trans      &trans        &trans     &kp KP_DOT  &kp COMMA  &trans    &trans          &trans
             >;
+
+            label = "4";
         };
 
         layer_5 {
